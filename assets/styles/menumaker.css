@@ -30,7 +30,7 @@
 #cssmenu {
   font-family: Montserrat, sans-serif;
   background: #333333;
-  background-image: url({{ site.github.url }}/assets/images/stucco.jpg);
+  background-image: url(../images/stucco.jpg);
 }
 #cssmenu > ul > li {
   float: left;
