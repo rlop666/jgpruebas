@@ -352,7 +352,7 @@ table a, #comments a{background-color:inherit;}
 }
 
 .menu_fondo{
-	background-image: url('../images/stucco.jpg');
+	background-image: url('{{ site.github.url }}/assets//images/stucco.jpg');
 }
 
 .menu-fixed {
@@ -388,7 +388,7 @@ table a, #comments a{background-color:inherit;}
 .btn_big{
 	color: #FFFFFF;
     padding: 12px 30px;
-	font-size:2.4rem; 
+	font-size:2.4rem;
 	font-weight:normal;
 	background-color: #93C0C5;
 	text-align: center;
@@ -402,7 +402,7 @@ table a, #comments a{background-color:inherit;}
 }
 
 .alineacion_izquierda{
-	text-align: left;	
+	text-align: left;
 }
 
 .texto_azul{
@@ -455,7 +455,7 @@ table a, #comments a{background-color:inherit;}
   .mi-iframe {
     width: 95%;
     height: 750px;
-  } 
+  }
 
 }
 
@@ -465,6 +465,6 @@ table a, #comments a{background-color:inherit;}
   .mi-iframe {
     width: 95%;
     height: 880px;
-  } 
+  }
 
 }
