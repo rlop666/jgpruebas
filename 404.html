@@ -7,44 +7,31 @@ Licence: Free to use under our free template licence terms
 Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114683858-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-114683858-1');
-</script>
+<!-- HEAD -->
+{% include head.html %}
+<!-- HEAD -->
 
-<title>Josefina González | 404</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="./layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-</head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <!-- ################################################################################################ -->
 <!-- CABECERA -->
-<div w3-include-html="./cabecera.html"></div>
+{% include cabecera.html %}
 <!-- FIN CABECERA -->
 <!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <!-- ################################################################################################ -->
 <!-- MENU -->
-<div w3-include-html="./menu.html"></div>
+{% include menu.html %}
 <!-- FIN MENU -->
 <!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <div class="wrapper row2 bgded">
   <div class="overlay">
-    <div id="breadcrumb" class="clear"> 
+    <div id="breadcrumb" class="clear">
       <!-- ################################################################################################ -->
       <ul>
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="{{ site.github.url }}/index.html">Home</a></li>
       </ul>
       <!-- ################################################################################################ -->
     </div>
@@ -54,12 +41,12 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <main class="container clear"> 
+  <main class="container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content three_quarter first"> 
+    <div class="content three_quarter first">
       <!-- ################################################################################################ -->
-      <p class="titulo_articulo">PAGINA NO ENCONTRADA</p> 
+      <p class="titulo_articulo">PAGINA NO ENCONTRADA</p>
       <p>Ups!, parece que la página no existe</p>
 
 
@@ -68,7 +55,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <!-- MENU LATERAL -->
-    <!--div w3-include-html="./menulateral.html"></div-->
+    <!--    {% include menulateral.html %}-->
     <!-- FIN MENU LATERAL -->
 
 
@@ -82,38 +69,23 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <div class="wrapper row4 bgded">
   <div class="overlay">
-    <section id="footercta"> 
+    <section id="footercta">
       <br>
     </section>
   </div>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
 
+<!-- ################################################################################################ -->
 <!-- FOOTER -->
-<div w3-include-html="./footer.html"></div>
+{% include footer.html %}
 <!-- FIN FOOTER -->
+<!-- ################################################################################################ -->
 
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
-<script src="./layout/scripts/jquery.min.js"></script>
-<script src="./layout/scripts/jquery.backtotop.js"></script>
-<script src="./layout/scripts/jquery.mobilemenu.js"></script>
-<script src="./layout/scripts/w3.js"></script>
-<script src="layout/scripts/menumaker.js"></script>
-<script src="layout/scripts/funciones.js"></script>
 
-<script>
-//$(document).ready(function(){
-  function llamaReady(){
-    functionReady();
-  }
-//});
-</script>
+{% include estilosyjs.html %}
+
 <script>
   w3.includeHTML(llamaReady);
 </script>
